@@ -30,7 +30,7 @@ export const cardData = [
 export const coursesData = [
   {
     id: 1,
-    img: "./src/assets/images/6.jpg",
+    img: "./public/assets/images/6.jpg",
     department: "Graphic Design",
     title: "UI & UX Design",
     rating: "4.7",
@@ -44,7 +44,7 @@ export const coursesData = [
   },
   {
     id: 2,
-    img: "./src/assets/images/1.jpg",
+    img: "./public/assets/images/1.jpg",
     department: "Web Development",
     title: "Full Stack Web Development",
     rating: "4.8",
@@ -58,7 +58,7 @@ export const coursesData = [
   },
   {
     id: 3,
-    img: "./src/assets/images/2.jpg",
+    img: "./public/assets/images/2.jpg",
     department: "Marketing",
     title: "Digital Marketing Mastery",
     rating: "4.6",
@@ -76,7 +76,7 @@ export const ratingData = [
   {
     id: 1,
     stars: "★★★★★",
-    img: "./src/assets/images/3.jpg",
+    img: "./public/assets/images/3.jpg",
     description:
       "This course exceeded my expectations! The content was well-organized, the explanations were clear, and the hands-on projects helped me build real-world skills. Highly recommend it to anyone looking to learn!",
     name: "Gamal Mahmoud",
@@ -85,7 +85,7 @@ export const ratingData = [
   {
     id: 2,
     stars: "★★★★☆",
-    img: "./src/assets/images/4.jpg",
+    img: "./public/assets/images/4.jpg",
     description:
       "The course was very informative and the explanations were clear. The projects were practical and really helped reinforce what I learned.",
     name: "Omar Mohamed",
@@ -94,7 +94,7 @@ export const ratingData = [
   {
     id: 3,
     stars: "★★★★★",
-    img: "./src/assets/images/5.jpg",
+    img: "./public/assets/images/5.jpg",
     description:
       "I loved this course! Everything was easy to follow, and I now feel more confident in my skills. Great for beginners and professionals alike!",
     name: "Islam Tarek",
