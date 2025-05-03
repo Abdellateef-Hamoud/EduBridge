@@ -1,0 +1,1031 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+:root{
+  --dark-blue:#252B42;
+  --sky-blue:#23A6f0;
+  --light-sky-blue:#b2e3ff;
+  --light-orane:#E77c40;
+  --red:#e74040;
+  --light-pink:#ffdcd1;
+  --light-gray:#737373;
+  --yellow:#f3cd03;
+  --green:#2dc071;
+  --light-green:#B9EAA8;
+
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  line-height: 1.4;
+}
+
+/*Utility Classes*/
+
+.container{
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+/*Header Start*/
+
+#header{
+  background-color: var(--dark-blue);
+
+}
+
+.text-primary{
+  font-weight:600;
+  color: var(--sky-blue);
+  font-size: 14px;
+}
+
+.text-secondary{
+  font-weight:600;
+  color: var(--green);
+  font-size: 14px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin: auto;
+  max-width: 1100px;
+  height: 100px;
+}
+
+.navbar a{
+  color: #fff;
+  font-size: 14px;
+}
+
+.navbar .logo{
+  font-size: 24px;
+  font-weight: 600;
+} 
+
+.navbar ul{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.navbar ul li a{
+  margin: 0 10px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+
+.navbar ul li a:hover{
+  color: var(--red);
+}
+
+.navbar .account .btn-join{
+  background-color: var(--sky-blue);
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 25px;
+}
+.navbar .account .btn-join svg{
+  vertical-align: middle;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.navbar .account .btn-join:hover{
+  background-color: #2e7dab;
+  transition: all 0.4s ease ;
+} 
+/*Header End*/
+
+/*Main Start*/
+/*Home Start*/
+#home{
+  background-color: var(--dark-blue);
+  padding: 5rem 0;
+}
+
+#home .home-header{
+  text-align: center;
+  color: #fff;
+  margin: auto;
+  max-width: 450px;
+}
+
+#home .container .home-header span{
+  color: var(--red);
+  font-weight: 600;
+}
+
+
+#home .home-header h1{
+  font-size: 40px;
+  font-weight: 600;
+  margin: 20px 0;
+  color: var(--light-pink);
+}
+
+#home .home-header p{
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: var(--light-pink);
+}
+
+#home .home-header .btn{
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin:0 5px;
+  border: 1px solid var(--red);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#home .home-header .btn.btn-red{
+  background-color: var(--red);
+  color: #fff;
+}
+
+#home .home-header .btn.btn-transparent{
+  color: var(--red);
+}
+
+
+#home .card-container{
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+#home .card-container .card{
+  padding: 20px;
+  background-color: #fff;
+  border:1px solid var(--light-gray) ;
+  border-radius: 5px;
+}
+
+#home .card-container .card .icon{
+  padding: 12px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+#home .card-container .card .icon svg{
+  font-size: 25px;
+}
+
+#home .card-container .card h2{
+  font-size: 18px;
+  color: var(--dark-blue);
+  margin-top: 15px;
+}
+
+#home .card-container .card .line{
+  width: 50px;
+  height: 2px;
+  background-color: var(--red);
+  margin: 15px 0;
+  
+}
+
+
+#home .card-container .card p{
+  font-size: 14px;
+}
+/*Home End*/
+
+/* Courses Start */
+
+#courses{
+  padding: 7rem 0;
+}
+
+ .section-header h2{
+  margin: 15px 0;
+  font-size: 35;
+  color: var(--dark-blue);
+
+}
+
+.section-header p{
+  color: var(--light-gray);
+}
+
+#courses .courses-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+
+
+/* /////////////////////////////////// */
+
+
+/* Main Course Card Container */
+.course {
+  position: relative;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  margin: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.course:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Sale Badge */
+.sale {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4757;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Course Image */
+.course img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content Section */
+.content {
+  padding: 15px;
+}
+
+/* Course Field (Department + Rating) */
+.course-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.department {
+  color: #3498db;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  color: #f39c12;
+  font-size: 14px;
+  margin: 0;
+}
+
+.rating svg {
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+/* Title */
+h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+/* Description */
+.description {
+  color: #7f8c8d;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 10px 0;
+}
+
+/* Sales */
+.sales {
+  color: #95a5a6;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+/* Price Section */
+.price {
+  margin: 10px 0;
+}
+
+.price del {
+  color: #95a5a6;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.price span {
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Course Info (Duration + Lessons) */
+.course-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #ecf0f1;
+}
+
+.course-info p {
+  display: flex;
+  align-items: center;
+  color: #7f8c8d;
+  font-size: 13px;
+  margin: 0;
+}
+
+.course-info svg {
+  margin-right: 5px;
+  font-size: 14px;
+  
+}
+
+/* Learn More Button */
+.btn-learn {
+  display: flex;
+  align-items: center;
+  color: #3498db;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.btn-learn:hover {
+  color: #2980b9;
+}
+
+.btn-learn svg {
+  margin-left: 5px;
+  font-size: 10px;
+  
+}
+
+/* Courses End */
+
+/* Reviews Start */
+#reviews {
+  padding-bottom: 7rem;
+}
+
+#reviews .ratings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem; /* تقليل الجاب بين البطاقات */
+  margin-top: 5rem;
+}
+
+#reviews .ratings .rating {
+  display: flex;
+  flex-direction: column; /* جعل العناصر تترتب عمودياً */
+  align-items: center; /* توسيط العناصر أفقيًا */
+  text-align: center; /* توسيط النصوص */
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#reviews .ratings .rating img {
+  width: 80px; /* زيادة حجم الصورة */
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0; /* إزالة الهامش الأيمن */
+  margin-bottom: 1.5rem; /* إضافة هامش سفلي */
+}
+
+#reviews .ratings .rating .stars {
+  color: var(--yellow);
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+}
+
+#reviews .ratings .rating .description {
+  font-size: 14px;
+  color: var(--light-gray);
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+#reviews .ratings .rating .person {
+  margin-top: auto; /* دفع معلومات الشخص للأسفل */
+}
+
+#reviews .ratings .rating .person h3 {
+  margin-bottom: 0.5rem;
+  color: var(--sky-blue);
+}
+
+#reviews .ratings .rating .person p {
+  color: var(--dark-blue);
+  font-size: 13px;
+}
+/* Reviews End */
+
+
+
+/* Join Us Start */
+/* Join Us Section Styles */
+#joinus {
+  padding: 5rem 0;
+  background-color: var(--dark-blue);
+  text-align: center;
+}
+
+#joinus .content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+#joinus .text-primary {
+  color: var(--sky-blue);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+#joinus h2 {
+  font-size: 2.5rem;
+  color:#fff;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+#joinus .description {
+  color: #c7cbcb;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+#joinus form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#joinus input[type="email"] {
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+#joinus input[type="email"]:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+#joinus button[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#joinus button[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  #joinus form {
+    flex-direction: row;
+  }
+  
+  #joinus input[type="email"] {
+    flex: 1;
+  }
+  
+  #joinus button[type="submit"] {
+    width: auto;
+  }
+}
+/* Join Us End */
+/*Main End*/
+
+/* Footer STart */
+/* Footer Styles */
+#footer {
+  background-color: #f1f0f0;
+  color: var(--light-gray);
+  padding: 4rem 0 2rem;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+#footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+#footer .footer-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+#footer .col {
+  margin-bottom: 2rem;
+}
+
+#footer h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color:var(--dark-blue);
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+#footer h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #3498db;
+}
+
+#footer p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--light-gray);
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer ul li {
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+#footer ul li:hover {
+  transform: translateX(5px);
+}
+
+#footer ul li:before {
+  content: '•';
+  color: #3498db;
+  margin-right: 8px;
+}
+
+#footer a {
+  color: var(--light-gray);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#footer a:hover {
+  color: #3498db;
+}
+
+/* Social Icons */
+#footer .social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+#footer .social-icons i {
+  color: var(--sky-blue);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#footer .social-icons i:hover {
+  color: #3498db;
+  transform: translateY(-3px);
+}
+
+/* Copyright Section */
+#footer .copyright {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* margin-top: 2rem; */
+  color: #bdc3c7;
+  font-size: 0.9rem;
+}
+#footer .copyright p{
+  color: var(--light-gray);
+}
+
+#footer .copyright a {
+  color: #3498db;
+  font-weight: 600;
+}
+
+#footer .text-primary {
+  color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #footer .footer-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  #footer {
+    padding: 3rem 0 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #footer .footer-row {
+    grid-template-columns: 1fr;
+  }
+}
+/* Footer End */
+
+
+
+/* Add this at the top of your CSS file */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 800px;
+  }
+  
+  /* Adjust navbar for tablets */
+  .navbar {
+    padding: 0 1rem;
+  }
+  
+  .navbar ul li a {
+    margin: 0 5px;
+  }
+  
+  /* Adjust home section */
+  #home .home-header h1 {
+    font-size: 36px;
+  }
+  
+  /* Adjust course cards */
+  #courses .courses-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Adjust reviews section */
+  #reviews .ratings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+  
+  /* Mobile navbar */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  }
+  
+  .navbar .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Hidden by default */
+  }
+  
+  .navbar ul.show {
+    display: flex; /* Show when toggled */
+  }
+  
+  .navbar ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .navbar .account {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .navbar .account .btn-join {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+  }
+  
+  /* Adjust home section */
+  #home {
+    padding: 3rem 0;
+  }
+  
+  #home .home-header h1 {
+    font-size: 32px;
+  }
+  
+  #home .card-container {
+    grid-template-columns: 1fr;
+    margin: 3rem 0;
+  }
+  
+  /* Adjust courses section */
+  #courses {
+    padding: 4rem 0;
+  }
+  
+  #courses .courses-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .course {
+    width: 100%;
+    margin: 15px 0;
+  }
+  
+  /* Adjust reviews section */
+  #reviews .ratings {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Adjust join us section */
+  #joinus h2 {
+    font-size: 2rem;
+  }
+  
+  #joinus form {
+    flex-direction: column;
+  }
+  
+  #joinus input[type="email"] {
+    width: 100%;
+  }
+  
+  #joinus button[type="submit"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  /* Adjust home section */
+  #home .home-header h1 {
+    font-size: 28px;
+  }
+  
+  #home .home-header .btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #home .home-header .btn {
+    margin: 5px 0;
+    width: 100%;
+  }
+  
+  /* Adjust footer */
+  #footer .footer-row {
+    grid-template-columns: 1fr;
+  }
+  
+  #footer .col {
+    text-align: center;
+  }
+  
+  #footer h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  #footer .social-icons {
+    justify-content: center;
+  }
+}
+
+/* Add this to your existing CSS */
+.hamburger {
+  display: none; /* Hidden by default on larger screens */
+}
+
+/* Add smooth transitions */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjust font sizes for mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/* Ensure buttons and inputs are mobile-friendly */
+button, input, .btn {
+  min-height: 44px; /* Recommended minimum touch target size */
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+
+/* Mobile styles */
+.hamburger {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .navbar {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .account {
+    margin-top: 10px;
+  }
+}
+
+
+/* Desktop Account */
+.desktop-account {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Mobile Account (hidden on desktop) */
+.mobile-account {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 10px;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .mobile-account {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center; /* <-- المنتصف */
+  }
+
+  .mobile-account a {
+    text-align: center; /* <-- النصوص كمان في المنتصف */
+  }
+
+  .nav-links-container.show .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .desktop-account {
+    display: none;
+  }
+  
+  .mobile-account {
+    display: flex;
+  }
+  
+  .nav-links-container {
+    display: none;
+    width: 100%;
+  }
+  
+  .nav-links-container.show {
+    display: block;
+  }
+}
