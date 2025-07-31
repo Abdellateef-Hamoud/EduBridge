@@ -19,7 +19,7 @@ export default function Courses() {
                 const {id,img,department,title,rating,description,sales,price,discount,duration,lessons}=course;
                 return <Course key={id} img={img} department={department} title={title} 
                 rating={rating} description={description} sales={sales} price={price} 
-                discount={discount} discount={discount} duration={duration} lessons={lessons} />
+                 discount={discount} duration={duration} lessons={lessons} />
               })}
                           
             </div>
