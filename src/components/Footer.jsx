@@ -49,8 +49,8 @@ export default function Footer() {
         </div>
         <div className="copyright">
           <p>&copy; 2025 | EduBridge All rights reserved made by {"  "}
-          <a href="https://www.linkedin.com/in/abdellateef-hammoud-56451a2bb/" target="_blank" 
-          rel="noopener noreferrer"> <strong className='text-primary' > Abdellateef Hammoud </strong> </a></p> 
+          <a href="" target="_blank" 
+          rel="noopener noreferrer"> <strong className='text-primary' > Abboud </strong> </a></p> 
           
         </div>
       </div>
